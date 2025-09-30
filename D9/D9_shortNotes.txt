@@ -1,0 +1,65 @@
+# HTML Notes - Day 9
+
+## 1. What is HTML?
+
+* **HTML = HyperText Markup Language** (links + tags + rules).
+* Defines structure & meaning of web pages.
+* Base for CSS & JS.
+
+## 2. Why HTML is Important
+
+* **Structure**: Headings, paragraphs, lists, etc.
+* **Accessibility**: Screen readers, labels, transcripts.
+* **SEO**: Titles, headings, meta tags.
+* **Cross-device**: Works on all browsers/devices.
+
+## 3. Boilerplate & Tips
+
+* `<meta charset="UTF-8">` → avoids weird characters.
+* `<meta name="viewport">` → responsive design.
+* `defer` on `<script>` → faster page load.
+
+## 4. Common Tags
+
+* **Text:** `<h1>`–`<h6>`, `<p>`, `<b>`, `<i>`, `<u>`, `<mark>`.
+* **Lists:** `<ol>`, `<ul>`, `<li>`.
+* **Links:** `<a href="...">` (use `target`, `rel` for safety).
+* **Images:** `<img src="..." alt="..." loading="lazy">`
+
+  * Use `width`, `height` to avoid layout shift.
+  * Responsive images → `srcset`, `<picture>`.
+
+## 5. Media Tags
+
+* **Video:** `<video>` with `controls`, `autoplay`, `muted`, `loop`, `poster`.
+
+  * Add `<track>` for captions (accessibility).
+* **Audio:** `<audio>` with `controls`, `loop`, `preload`.
+
+## 6. Forms
+
+* `<form action="..." method="GET/POST">`
+* **Attributes:**
+
+  * `name` (backend key), `required`, `pattern`, `autocomplete`.
+  * `<select>` with `<optgroup>` and `multiple`.
+
+## 7. Semantic Tags
+
+* Prefer semantic HTML over `<div>` spam.
+* Common tags: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`.
+
+## 8. Best Practices
+
+✅ Always use `alt` for images.
+✅ Label all form elements.
+✅ Maintain high color contrast.
+✅ Ensure keyboard accessibility.
+
+❌ Don’t use `<div>` everywhere.
+❌ Don’t forget `name` in forms.
+❌ Don’t use unoptimized large images.
+
+---
+
+✅ Quick, structured summary for **Day-9 HTML notes**.
