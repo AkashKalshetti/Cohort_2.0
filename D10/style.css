@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'HeaderHai';
+    src: url('./fonts/BrontidevpDemoStyle2-ZV8E3.otf') format('opentype');
+}
+
+h1{
+    color: red;
+    background-color: royalblue;
+    font-size: 100 px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.prop{
+    color: orange;
+}
+
+#prop1{
+    color: red;
+}
+
+#prop2{
+    color: green;
+}
+
+#prop3{
+    color: blue;
+}
+
+#prop4{
+    color: black;
+}
+
+#divProp{
+    font-family: HeaderHai;
+}
+
