@@ -1,0 +1,57 @@
+## 📘 CSS Basics – Notes
+
+### 🔹 What is CSS?
+
+* CSS = **Cascading Style Sheets**
+* Used to style and design HTML pages.
+* Controls **fonts, colors, layouts**.
+
+### 🔹 Why use CSS?
+
+* Makes websites **beautiful & responsive**.
+* Controls **layout & design** separately from HTML.
+* Saves time → one CSS file can be applied to many pages.
+* Improves **user experience**.
+
+### 🔹 Types of CSS
+
+1. **Inline CSS** → style inside HTML element.
+2. **Internal CSS** → inside `<style>` tag in HTML.
+3. **External CSS** → separate `.css` file, linked with:
+
+   ```html
+   <link rel="stylesheet" href="style.css">
+   ```
+
+   ✅ Best for large projects.
+
+### 🔹 CSS Syntax
+
+```css
+selector {
+   property: value;
+}
+```
+
+### 🔹 CSS Selectors
+
+* **Universal** → `* { margin: 0; padding: 0; }`
+* **Tag** → `h1 { color: blue; }`
+* **Class** → `.highlight { color: green; }`
+* **ID** → `#special { color: red; }`
+
+👉 **Use Class** for reusable styles, **ID** for unique elements.
+
+### 🔹 Fonts in CSS
+
+* Use **Google Fonts** or `@font-face` for custom fonts.
+
+### 🔹 Div in CSS
+
+* `<div>` = empty container in HTML.
+* CSS gives it **shape, size, color, layout**.
+
+---
+
+⚡ These are your **Day-10 CSS basics notes** in a short, easy-to-revise format.
+
