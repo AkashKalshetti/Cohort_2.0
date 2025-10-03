@@ -1,0 +1,126 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+}
+
+#mainHeading{
+    color: aliceblue;
+    background-color: royalblue;
+    text-align: center;
+    height: 115px;
+    padding: 25px;
+}
+
+#mainDiv{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+#aboutMe{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background: rgb(236, 236, 255);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(29, 21, 59, 0.322);
+}
+
+#education{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background: rgb(187, 234, 255);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(29, 21, 59, 0.322);
+}
+
+.edu{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background: rgb(247, 247, 247);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(29, 21, 59, 0.322);
+}
+
+#skills{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background: rgb(232, 207, 255);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(29, 21, 59, 0.322);
+}
+
+.skill{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background: rgb(247, 247, 247);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(29, 21, 59, 0.322);
+}
+
+#projects{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background: rgb(200, 255, 174);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(29, 21, 59, 0.322);
+}
+
+.proj{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background: rgb(247, 247, 247);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(29, 21, 59, 0.322);
+}
+
+#contactMe{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background: rgb(255, 227, 157);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(29, 21, 59, 0.322);
+}
+
+.contact{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background: rgb(247, 247, 247);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(29, 21, 59, 0.322);
+}
+
+#footerHu{
+    color: aliceblue;
+    background-color: rgb(0, 28, 111);
+    text-align: center;
+    height: 115px;
+    padding: 25px;
+}
