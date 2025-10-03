@@ -1,0 +1,37 @@
+#mainBox{
+    display: flex;
+    justify-content: center;
+}
+
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: orange;   
+    margin: 10px; 
+}
+#box2{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to bottom left,red,blue);   
+    margin: 10px; 
+}
+#box3{
+    height: 200px;
+    width: 200px;
+    background: radial-gradient(yellow,orange,red);   
+    margin: 10px;
+}
+#box4{
+    height: 200px;
+    width: 200px;
+    background: conic-gradient(violet,indigo,blue,green,yellow,orange,red,violet);   
+    margin: 10px;
+}
+#imgP{
+    height: 100vh;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/0c/66/bd/0c66bd9d2ae0dcd6eef6395192d55799.jpg);
+    border-radius: 50px;
+    border: 10px solid black;
+    box-shadow: 0 10px black 50%;
+}
