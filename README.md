@@ -69,3 +69,35 @@ git push origin feature-x
 * Pull before pushing to avoid conflicts
 * Use branches for features & fixes
 * Never commit secrets 🔒
+
+# How the Internet Works
+
+## Web Evolution
+- Web 1.0 → Static, read-only websites
+- Web 2.0 → Social, user-generated content
+- Web 3.0 → Decentralized, blockchain-based, user-owned data
+
+## Computer Communication
+- Every device has an IP address
+- Uses TCP/IP protocol
+- Data is split into packets
+- Packets are reassembled at destination
+
+## Data Travel
+- Routers decide best path
+- Switches connect local devices
+- Undersea cables connect continents
+- Internet auto-reroutes on failure
+
+## Identity on the Internet
+- Domain Name → Human-friendly address (google.com)
+- IP Address → Numeric device/server ID
+- MAC Address → Permanent hardware ID
+- Routing → Fastest & safest data path
+
+## ISP & DNS
+- ISP provides internet access
+- DNS converts domain names to IPs
+
+Flow:
+google.com → DNS → IP → ISP → Server
