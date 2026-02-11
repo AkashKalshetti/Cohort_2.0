@@ -101,3 +101,71 @@ git push origin feature-x
 
 Flow:
 google.com → DNS → IP → ISP → Server
+
+
+# Client-Server Architecture
+
+## Client-Server Model
+- Client → Requests data (browser, mobile app)
+- Server → Stores, processes, responds with data
+- Relationship → Client asks → Server responds
+
+Example:
+You request google.com → Server sends webpage
+
+---
+
+## HTTP Request-Response Cycle
+1. User enters URL
+2. Browser sends HTTP/HTTPS request
+3. Server processes request (logic, database)
+4. Server sends response (HTML, JSON, images)
+5. Browser renders page
+
+---
+
+## What Happens When You Visit a Website
+1. Enter website URL
+2. DNS converts domain → IP
+3. Connect via ISP
+4. Browser sends HTTP request
+5. Server sends data
+6. Browser displays website
+
+---
+
+## Frontend vs Backend
+
+### Frontend (Client-Side)
+- Visible UI
+- Built with HTML, CSS, JavaScript
+- Handles user interaction
+
+### Backend (Server-Side)
+- Hidden logic on server
+- Handles authentication, databases, APIs
+
+---
+
+## Static vs Dynamic Websites
+
+### Static
+- Same content for everyone
+- Pre-written HTML
+- Fast, limited interactivity
+
+### Dynamic
+- Content changes based on user/data
+- Uses backend + database
+
+---
+
+## Web Hosting
+- Renting server space for your website
+- Keeps website online 24/7
+
+### Types of Hosting
+- Shared → Multiple sites, cheaper
+- VPS/Dedicated → More power, higher cost
+- Cloud → Scalable (AWS, Google Cloud, Azure)
+
