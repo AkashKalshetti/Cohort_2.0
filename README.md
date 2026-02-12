@@ -169,3 +169,54 @@ You request google.com → Server sends webpage
 - VPS/Dedicated → More power, higher cost
 - Cloud → Scalable (AWS, Google Cloud, Azure)
 
+
+# Internet Protocols
+
+## TCP (Transmission Control Protocol)
+- Reliable, ordered, error-checked delivery
+- Breaks large data into packets
+- Resends lost/corrupted packets
+- Ensures correct packet order
+
+### TCP 3-Way Handshake
+1. SYN → Client: "Can we connect?"
+2. SYN-ACK → Server: "Yes, I'm ready."
+3. ACK → Client: "Okay, let's start."
+
+(Connection established after handshake)
+
+### Used For
+- Web browsing
+- Email
+- File transfer (FTP)
+
+---
+
+## UDP (User Datagram Protocol)
+- Fast, connectionless communication
+- No handshake
+- No error correction
+- No guaranteed packet order
+- Low latency
+
+### How UDP Works
+Client → Directly sends packets → Server  
+(Some packets may be lost)
+
+### Used For
+- Video streaming
+- Online gaming
+- Voice/video calls
+
+---
+
+## TCP vs UDP
+
+| Feature      | TCP | UDP |
+|-------------|------|------|
+| Connection  | Connection-oriented (3-way handshake) | Connectionless |
+| Reliability | Reliable (error checking, resend) | Unreliable |
+| Speed       | Slower | Faster |
+| Packet Order| Maintains order | May arrive out of order |
+| Use Cases   | Web, Email, FTP | Gaming, Streaming, Calls |
+
