@@ -220,3 +220,78 @@ Client → Directly sends packets → Server
 | Packet Order| Maintains order | May arrive out of order |
 | Use Cases   | Web, Email, FTP | Gaming, Streaming, Calls |
 
+
+# Understanding HTTP & HTTPS
+
+## What is HTTP?
+HTTP (HyperText Transfer Protocol) defines how clients (browsers) and servers communicate using requests and responses.
+
+### HTTP Versions
+- HTTP/1.0 → New connection for every request (slow)
+- HTTP/1.1 → Persistent connections (keep-alive)
+- HTTP/2 → Multiplexing, binary protocol, faster
+- HTTP/3 → Built on QUIC (UDP), faster & better for real-time apps
+
+---
+
+## HTTP Status Codes
+
+- 1xx → Informational
+- 2xx → Success (200 OK)
+- 3xx → Redirection (301, 302)
+- 4xx → Client Errors (400, 401, 404)
+- 5xx → Server Errors (500, 503)
+
+Example:
+Wrong URL → 404 Not Found
+
+---
+
+## What is HTTPS?
+HTTPS = Secure version of HTTP  
+Uses SSL/TLS encryption to protect data.
+
+Prevents:
+- Eavesdropping
+- Data tampering
+- Identity theft
+
+Used for:
+- Banking
+- Payments
+- Login forms
+
+---
+
+## SSL/TLS
+Security protocols that ensure:
+1. Encryption → Data cannot be read
+2. Authentication → Website is genuine
+3. Integrity → Data not modified
+
+(TLS is modern & more secure than SSL)
+
+---
+
+## Proxy vs Reverse Proxy
+
+### Proxy
+- Between client and internet
+- Hides client identity (IP)
+- Used for privacy, filtering, accessing blocked content
+
+### Reverse Proxy
+- Sits in front of servers
+- Hides actual server details
+- Used for load balancing, security, caching
+
+---
+
+## VPN (Virtual Private Network)
+- Creates secure encrypted tunnel
+- Hides real IP/location
+- Prevents ISP monitoring
+- Useful on public Wi-Fi
+
+Example:
+Appears browsing from US even if in India
