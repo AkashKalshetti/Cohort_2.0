@@ -295,3 +295,93 @@ Security protocols that ensure:
 
 Example:
 Appears browsing from US even if in India
+
+# Git Explained Simply
+
+## What is Git?
+Git is a version control system.
+- Tracks file changes over time
+- Allows collaboration
+- Lets you revert to older versions
+- Enables safe experimentation using branches
+
+---
+
+## Core Concepts
+
+- Repository (Repo) → Project folder tracked by Git
+- Working Directory → Where you edit files
+- Staging Area → Where changes are prepared for commit
+- Commit → Snapshot of changes with a message
+- Branch → Separate timeline for development
+- Remote Repository → Online repo (GitHub, GitLab, Bitbucket)
+
+---
+
+## Basic Setup
+
+git config --global user.name "Your Name"
+git config --global user.email "you@email.com"
+git init
+git clone <repo_url>
+git status
+
+---
+
+## Working with Changes
+
+git add <file>
+git add .
+git commit -m "message"
+git diff
+git restore <file>
+git restore --staged <file>
+
+---
+
+## Viewing History
+
+git log
+git log --oneline
+git show <commit_hash>
+
+---
+
+## Branching
+
+git branch
+git branch <branch_name>
+git checkout <branch_name>
+git checkout -b <branch_name>
+git merge <branch_name>
+git branch -d <branch_name>
+
+---
+
+## Remote Repositories
+
+git remote add origin <repo_url>
+git remote -v
+git push origin <branch_name>
+git pull origin <branch_name>
+git fetch origin
+
+---
+
+## Good Practices
+
+- Commit frequently
+- Write clear commit messages
+- Use branches for features/fixes
+- Pull before pushing
+
+---
+
+## Typical Workflow
+
+1. Create branch
+2. Make changes
+3. git add .
+4. git commit -m "feature added"
+5. git push origin branch-name
+6. Merge into main
