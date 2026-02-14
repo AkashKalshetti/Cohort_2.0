@@ -385,3 +385,105 @@ git fetch origin
 4. git commit -m "feature added"
 5. git push origin branch-name
 6. Merge into main
+
+
+# HTML Basics
+
+## What is HTML?
+HTML (HyperText Markup Language) is the structure of every website.
+- Defines layout of text, images, links, media
+- Helps SEO & accessibility
+- Works on all browsers/devices
+- Styled later using CSS
+
+---
+
+## Basic Structure (Boilerplate)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Title</title>
+</head>
+<body>
+  Content goes here
+</body>
+</html>
+
+---
+
+## Common HTML Tags
+
+### Headings
+<h1> to <h6>
+
+### Paragraph
+<p>Text</p>
+
+### Formatting
+<b>Bold</b>  
+<i>Italic</i>  
+<u>Underline</u>  
+H<sup>2</sup>O  
+CO<sub>2</sub>
+
+---
+
+### Lists
+Ordered:
+<ol>
+  <li>Item</li>
+</ol>
+
+Unordered:
+<ul>
+  <li>Item</li>
+</ul>
+
+---
+
+### Links
+<a href="https://example.com" target="_blank">Visit</a>
+
+- href → URL
+- target="_blank" → Opens in new tab
+
+---
+
+### Images
+<img src="image.png" alt="Description">
+
+- src → Image path
+- alt → Alternative text (SEO & accessibility)
+
+---
+
+### Line & Divider
+<br>  → Line break  
+<hr>  → Horizontal line  
+
+(Self-closing tags: img, br, hr)
+
+---
+
+### Comments
+<!-- This is a comment -->
+
+(Not visible in browser)
+
+---
+
+## Quick Tag Summary
+
+- Headings → <h1> to <h6>
+- Paragraph → <p>
+- Formatting → <b>, <i>, <u>
+- Sup/Sub → <sup>, <sub>
+- Lists → <ol>, <ul>, <li>
+- Link → <a>
+- Image → <img>
+- Break/Line → <br>, <hr>
+- Comment → <!-- -->
+
