@@ -385,3 +385,157 @@ git fetch origin
 4. git commit -m "feature added"
 5. git push origin branch-name
 6. Merge into main
+
+
+# HTML Basics
+
+## What is HTML?
+
+HTML (HyperText Markup Language) is the structure of every website.
+
+- Defines layout of text, images, links, and media  
+- Helps SEO & accessibility  
+- Works on all browsers/devices  
+- Styled later using CSS  
+
+---
+
+## Basic HTML Boilerplate
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Title</title>
+</head>
+<body>
+  Content goes here
+</body>
+</html>
+```
+
+---
+
+## Headings
+
+```html
+<h1>Main Heading</h1>
+<h2>Sub Heading</h2>
+<h3>Smaller Heading</h3>
+```
+
+---
+
+## Paragraph
+
+```html
+<p>This is a paragraph.</p>
+```
+
+---
+
+## Text Formatting
+
+```html
+<b>Bold</b>
+<i>Italic</i>
+<u>Underline</u>
+```
+
+### Superscript & Subscript
+
+```html
+H<sup>2</sup>O
+CO<sub>2</sub>
+```
+
+---
+
+## Lists
+
+### Ordered List
+
+```html
+<ol>
+  <li>Wake up</li>
+  <li>Brush teeth</li>
+  <li>Go to work</li>
+</ol>
+```
+
+### Unordered List
+
+```html
+<ul>
+  <li>Apples</li>
+  <li>Bananas</li>
+  <li>Mangoes</li>
+</ul>
+```
+
+---
+
+## Anchor (Link)
+
+```html
+<a href="https://example.com" target="_blank">Visit Website</a>
+```
+
+- `href` → Destination URL  
+- `target="_blank"` → Opens link in new tab  
+
+---
+
+## Image
+
+```html
+<img src="image.png" alt="Description of image">
+```
+
+- `src` → Image path  
+- `alt` → Alternative text (important for SEO & accessibility)  
+
+---
+
+## Line Break & Horizontal Rule
+
+```html
+<br>
+<hr>
+```
+
+- `<br>` → Line break  
+- `<hr>` → Horizontal divider  
+
+(Self-closing tags: `<img>`, `<br>`, `<hr>`)
+
+---
+
+## Comments
+
+```html
+<!-- This is a comment -->
+```
+
+Comments are not visible in the browser.
+
+---
+
+## Quick Tag Summary
+
+| Tag | Purpose |
+|-----|----------|
+| `<h1>` – `<h6>` | Headings |
+| `<p>` | Paragraph |
+| `<b>`, `<i>`, `<u>` | Formatting |
+| `<sup>`, `<sub>` | Superscript & Subscript |
+| `<ol>`, `<ul>`, `<li>` | Lists |
+| `<a>` | Links |
+| `<img>` | Images |
+| `<br>`, `<hr>` | Line & Divider |
+| `<!-- -->` | Comment |
+
+---
+
