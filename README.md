@@ -539,3 +539,216 @@ Comments are not visible in the browser.
 
 ---
 
+# HTML Advanced Concepts
+
+## Performance & Best Practice Tips
+
+- Use `<meta charset="UTF-8">` to prevent weird characters  
+- Use viewport meta for responsive design  
+- Use `defer` on scripts for faster loading  
+- Always provide `alt` in images  
+- Use `loading="lazy"` for performance  
+
+---
+
+## Images (Advanced Usage)
+
+```html
+<img 
+  src="photo.jpg" 
+  alt="My Photo" 
+  width="300" 
+  height="200" 
+  loading="lazy"
+>
+```
+
+### Important Attributes
+- `alt` → Accessibility & SEO
+- `width` / `height` → Prevent layout shift
+- `loading="lazy"` → Better performance
+- `srcset` / `<picture>` → Responsive images
+
+---
+
+## Video
+
+```html
+<video controls width="640" height="360" poster="poster.jpg">
+  <source src="video.mp4" type="video/mp4">
+  <track src="captions.vtt" kind="captions" srclang="en">
+</video>
+```
+
+### Attributes
+- `controls`
+- `autoplay`
+- `muted`
+- `loop`
+- `poster`
+
+Use `<track>` for captions (accessibility).
+
+---
+
+## Audio
+
+```html
+<audio controls preload="auto">
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+```
+
+Attributes:
+- `controls`
+- `loop`
+- `preload`
+
+Add transcripts for accessibility.
+
+---
+
+## Embedding (iframe)
+
+```html
+<iframe 
+  src="https://youtube.com/embed/123"
+  title="Intro Video"
+  width="560"
+  height="315"
+  loading="lazy"
+  sandbox
+  allowfullscreen>
+</iframe>
+```
+
+- `title` → Required for accessibility  
+- `sandbox` → Security  
+- `loading="lazy"` → Performance  
+
+---
+
+## Collapsible Content
+
+```html
+<details>
+  <summary>How do refunds work?</summary>
+  <p>Refunds within 14 days.</p>
+</details>
+```
+
+Useful for FAQs and expandable sections.
+
+---
+
+## Dropdowns
+
+```html
+<label for="country">Country</label>
+<select id="country" name="country">
+  <option value="">Select</option>
+  <option value="in">India</option>
+</select>
+```
+
+- `optgroup` → Group options  
+- `multiple` → Allow multi-select  
+
+---
+
+## Forms & Inputs
+
+```html
+<form action="/signup" method="post">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+  <button type="submit">Sign Up</button>
+</form>
+```
+
+### Important Attributes
+- `action` → Where data goes  
+- `method` → GET or POST  
+- `name` → Key for backend  
+- `required`, `pattern`, `autocomplete`  
+
+---
+
+## Meta Tags (SEO & Social Sharing)
+
+```html
+<meta name="description" content="Page description">
+<meta property="og:title" content="Page title">
+<meta name="twitter:card" content="summary_large_image">
+```
+
+Improves SEO and social media previews.
+
+---
+
+## Title & Favicon
+
+```html
+<title>Course – Sheryians Coding School</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+```
+
+---
+
+## Semantic HTML
+
+Instead of generic `<div>`, use semantic tags:
+
+```html
+<header></header>
+<nav></nav>
+<main></main>
+<section></section>
+<article></article>
+<footer></footer>
+```
+
+Semantic HTML improves:
+- SEO
+- Accessibility
+- Code readability
+
+---
+
+## Tables
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amy</td>
+      <td>92</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+---
+
+## Accessibility Checklist
+
+- Use semantic HTML
+- Always provide `alt`
+- Label forms properly
+- Ensure high color contrast
+- Make site keyboard accessible
+
+---
+
+## Common Mistakes
+
+- Missing `alt` attribute
+- Using `<div>` everywhere
+- Forgetting `name` in forms
+- Large unoptimized images
