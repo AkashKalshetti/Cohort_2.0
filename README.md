@@ -752,3 +752,104 @@ Semantic HTML improves:
 - Using `<div>` everywhere
 - Forgetting `name` in forms
 - Large unoptimized images
+
+# CSS Basics
+
+---
+
+# 1️⃣ What is CSS?
+
+**Definition:**  
+CSS (Cascading Style Sheets) styles HTML elements.
+
+**Why It Matters:**  
+Without CSS → website looks plain.  
+With CSS → layout, colors, fonts, spacing.
+
+**Memory Trigger:**  
+HTML = Structure 🧱  
+CSS = Design 🎨  
+
+**Quick Recall:**  
+CSS = Style + Layout + Presentation
+
+---
+
+# 2️⃣ Why Do We Use CSS?
+
+- Make websites beautiful
+- Control layout
+- Reusable styling (1 file → many pages)
+- Responsive design
+- Better UX
+
+**Interview Angle:**  
+CSS separates content from presentation.
+
+---
+
+# 3️⃣ Types of CSS
+
+## 1. Inline CSS
+
+```html
+<p style="color: red; font-size: 20px;">Inline styled text</p>
+```
+
+⚠️ Avoid for large projects.
+
+---
+
+## 2. Internal CSS
+
+```html
+<head>
+  <style>
+    h1 {
+      color: blue;
+      text-align: center;
+    }
+  </style>
+</head>
+```
+
+Used for single-page styling.
+
+---
+
+## 3. External CSS (Best Practice)
+
+```html
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+```
+
+```css
+p {
+  color: green;
+  font-size: 18px;
+}
+```
+
+**Memory Trigger:**  
+Inline ❌  
+Internal ⚠️  
+External ✅ (Professional way)
+
+---
+
+# 4️⃣ CSS Syntax
+
+```css
+selector {
+  property: value;
+}
+```
+
+Example:
+
+```css
+p {
+  color
+
