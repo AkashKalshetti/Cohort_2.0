@@ -851,5 +851,191 @@ Example:
 
 ```css
 p {
-  color
+  color: red;
+  font-size: 20px;
+}
+```
+
+**Quick Recall:**  
+Selector → Property → Value
+
+---
+
+# 5️⃣ Selecting Elements
+
+## Universal Selector
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+}
+```
+
+## Tag Selector
+
+```css
+h1 {
+  color: blue;
+}
+```
+
+## Class Selector (Reusable)
+
+```css
+.highlight {
+  color: green;
+}
+```
+
+## ID Selector (Unique)
+
+```css
+#special {
+  color: red;
+}
+```
+
+**Memory Trigger:**  
+`.` → Class (Reusable)  
+`#` → ID (Unique)
+
+---
+
+# 6️⃣ Text & Color Properties
+
+```css
+p {
+  color: purple;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+}
+```
+
+**Common Properties:**
+- `color`
+- `background-color`
+- `font-size`
+- `font-family`
+- `font-weight`
+- `text-align`
+- `text-transform`
+
+---
+
+# 7️⃣ Fonts
+
+## Google Fonts
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+```
+
+```css
+body {
+  font-family: 'Poppins', sans-serif;
+}
+```
+
+---
+
+## Local Font (@font-face)
+
+```css
+@font-face {
+  font-family: "MyFont";
+  src: url("MyFont.woff2") format("woff2");
+}
+
+p {
+  font-family: "MyFont", sans-serif;
+}
+```
+
+**Interview Tip:**  
+Google Fonts → CDN  
+@font-face → Local file hosting
+
+---
+
+# 8️⃣ ID vs Class
+
+```html
+<p id="unique">Uses ID</p>
+<p class="note">Uses Class</p>
+<p class="note">Reusable Class</p>
+```
+
+```css
+#unique { color: red; }
+.note { color: green; }
+```
+
+**Golden Rule:**  
+ID → One element  
+Class → Many elements  
+
+---
+
+# 9️⃣ Div in CSS
+
+```html
+<div class="box"></div>
+```
+
+```css
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  border: 2px solid blue;
+}
+```
+
+**Definition:**  
+`<div>` = empty container.
+
+**Memory Trigger:**  
+Div = Box 📦  
+CSS gives it shape & style.
+
+---
+
+# 🔥 Mini Revision Block (30-Second Recall)
+
+- CSS = Styling language
+- 3 Types → Inline / Internal / External
+- Syntax → selector { property: value; }
+- Selectors → * , tag, .class, #id
+- Class reusable, ID unique
+- External CSS = Professional standard
+
+---
+
+# 🚨 Common Beginner Mistakes
+
+- Using inline CSS everywhere
+- Using ID instead of class
+- Forgetting external stylesheet link
+- Writing CSS without selector
+
+---
+
+# 🎯 Interview Quick Answers
+
+**Q: What does "Cascading" mean?**  
+Order of rules decides priority.
+
+**Q: Best type of CSS?**  
+External CSS.
+
+**Q: Difference between class & ID?**  
+Class reusable, ID unique.
+
+---
+
 
