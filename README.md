@@ -1038,3 +1038,304 @@ Class reusable, ID unique.
 
 ---
 
+# CSS – Div, Backgrounds & Box Model
+
+---
+
+# 1️⃣ What is `<div>`?
+
+**Definition:**  
+`<div>` is a generic container that groups elements.
+
+**Key Idea:**  
+No visual effect by default → CSS gives it shape & style.
+
+**Memory Trigger:**  
+Div = Empty Box 📦  
+CSS paints it 🎨
+
+---
+
+## Example
+
+```html
+<div class="container">
+  <h2>Welcome</h2>
+  <p>This is inside a div container.</p>
+</div>
+```
+
+---
+
+# 2️⃣ Making a Box with `<div>`
+
+```html
+<div class="box">Hello World</div>
+```
+
+```css
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  border: 2px solid blue;
+}
+```
+
+**Used For:**
+- Cards
+- Product listings
+- Profile boxes
+- Layout sections
+
+---
+
+# 3️⃣ Background Properties
+
+---
+
+## 🎨 Background Color
+
+```css
+div {
+  background-color: lightgreen;
+}
+```
+
+Used for:
+- Buttons
+- Headers
+- Sections
+
+---
+
+## 🌈 Linear Gradient
+
+```css
+div {
+  background: linear-gradient(to right, red, yellow);
+}
+```
+
+Used for:
+- Navigation bars
+- Gradient effects
+
+Memory:  
+Linear → Straight line
+
+---
+
+## 🔵 Radial Gradient
+
+```css
+div {
+  background: radial-gradient(circle, blue, white);
+}
+```
+
+Used for:
+- Spotlight effects
+- Circular highlights
+
+Memory:  
+Radial → Circle from center
+
+---
+
+## 🥧 Conic Gradient
+
+```css
+div {
+  background: conic-gradient(red, yellow, green, blue);
+}
+```
+
+Used for:
+- Pie-chart style designs
+
+---
+
+## 🖼 Background Image
+
+```css
+div {
+  background-image: url("pattern.png");
+}
+```
+
+Used in:
+- Hero sections
+- Full-width banners
+
+---
+
+## 📏 Background Size
+
+```css
+div {
+  background-size: cover;
+}
+```
+
+Options:
+- `cover` → fills whole area
+- `contain` → fits inside element
+- Custom → `100px 200px`
+
+Memory Trick:
+Cover = Fill  
+Contain = Fit
+
+---
+
+## 📍 Background Position
+
+```css
+div {
+  background-position: center;
+}
+```
+
+Options:
+- top
+- left
+- right
+- center
+
+---
+
+## 🔁 Background Repeat
+
+```css
+div {
+  background-repeat: no-repeat;
+}
+```
+
+Options:
+- repeat (default)
+- repeat-x
+- repeat-y
+- no-repeat
+
+---
+
+# 4️⃣ CSS Box Model
+
+Every element is a box:
+
+1. Content → Text / Images  
+2. Padding → Inside spacing  
+3. Border → Outline  
+4. Margin → Outside spacing  
+
+**Visual Memory:**
+
+Margin  
+⬜ Border  
+⬜ Padding  
+⬜ Content  
+
+---
+
+## 📦 Margin (Outside Space)
+
+```css
+div {
+  margin: 20px;
+}
+```
+
+Adds space outside the element.
+
+---
+
+## 📦 Padding (Inside Space)
+
+```css
+div {
+  padding: 15px;
+}
+```
+
+Adds space inside the element.
+
+Common use: Buttons
+
+---
+
+## 🧱 Border
+
+```css
+div {
+  border: 1px solid black;
+}
+```
+
+Styles:
+- solid
+- dashed
+- dotted
+- double
+
+---
+
+## 🔵 Border Radius
+
+```css
+div {
+  border-radius: 15px;
+}
+```
+
+Rounded corners.
+
+Make circle:
+
+```css
+border-radius: 50%;
+```
+
+Used for:
+- Profile pictures
+- Badges
+
+---
+
+# 🔥 30-Second Revision Block
+
+- Div = container box
+- Background → color, image, gradient
+- Cover = fill area
+- Contain = fit inside
+- Box Model → Content + Padding + Border + Margin
+- Margin = outside space
+- Padding = inside space
+- border-radius: 50% → circle
+
+---
+
+# 🚨 Common Mistakes
+
+- Confusing margin & padding
+- Using background-size incorrectly
+- Forgetting no-repeat
+- Applying border-radius without width/height
+
+---
+
+# 🎯 Interview Quick Answers
+
+**Q: What is the CSS Box Model?**  
+Every element consists of content, padding, border, and margin.
+
+**Q: Difference between margin & padding?**  
+Margin = outside space  
+Padding = inside space  
+
+**Q: How to make a circle in CSS?**  
+Set equal width & height + `border-radius: 50%`
+
+---
+
