@@ -1339,3 +1339,235 @@ Set equal width & height + `border-radius: 50%`
 
 ---
 
+# CSS Positioning
+
+---
+
+# 1️⃣ What is CSS Positioning?
+
+**Definition:**  
+The `position` property controls how elements are placed and how they interact with surrounding elements.
+
+**Why It Matters:**  
+Used to control exact element placement in layouts.
+
+**Common Values:**
+- static (default)
+- relative
+- absolute
+- fixed
+- sticky
+
+---
+
+# 2️⃣ position: static (Default)
+
+**Definition:**  
+Normal document flow.
+
+No top/left/right/bottom effect.
+
+```css
+div {
+  position: static;
+}
+```
+
+📌 Rarely written explicitly.
+
+---
+
+# 3️⃣ position: relative
+
+**Definition:**  
+Moves element relative to its original position.
+
+```html
+<div class="box">Relative Box</div>
+```
+
+```css
+.box {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+```
+
+🧠 Memory Trigger:  
+Relative = Moves from original spot
+
+🎯 Real-life Use:
+- Fine-tuning icon placement
+- Adjusting spacing slightly
+
+---
+
+# 4️⃣ position: absolute
+
+**Definition:**  
+Positions element relative to nearest positioned ancestor.
+
+If no positioned parent → relative to viewport.
+
+```html
+<div class="parent">
+  <div class="child">Absolute Box</div>
+</div>
+```
+
+```css
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+```
+
+🧠 Memory Trigger:  
+Absolute = Escapes normal flow
+
+🎯 Real-life Use:
+- Badges
+- Tooltips
+- Pop-ups
+- Overlays
+
+---
+
+# 5️⃣ position: fixed
+
+**Definition:**  
+Fixed relative to viewport.
+
+Stays in place while scrolling.
+
+```css
+.fixed-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+```
+
+🧠 Memory Trigger:  
+Fixed = Glued to screen
+
+🎯 Real-life Use:
+- Chat buttons
+- "Back to Top"
+- Floating action buttons
+
+---
+
+# 6️⃣ position: sticky
+
+**Definition:**  
+Acts like relative → becomes fixed after scroll threshold.
+
+```css
+.sticky-header {
+  position: sticky;
+  top: 0;
+}
+```
+
+🧠 Memory Trigger:  
+Sticky = Scroll → Stick
+
+🎯 Real-life Use:
+- Sticky headers
+- Navbars
+- Sidebar menus
+
+---
+
+# 7️⃣ Position Summary Table
+
+| Type      | Description | Real-Life Use |
+|-----------|------------|--------------|
+| relative  | Moves from original spot | Fine-tuning placement |
+| absolute  | Positioned inside nearest positioned parent | Tooltips, overlays |
+| fixed     | Stays fixed to viewport | Chat buttons |
+| sticky    | Scroll → becomes fixed | Navbars |
+
+---
+
+# 8️⃣ flex-shrink
+
+**Definition:**  
+Controls how flex items shrink when space is limited.
+
+```css
+.item {
+  flex-shrink: 0;
+}
+```
+
+🧠 Memory Trigger:  
+Shrink = How much it compresses
+
+---
+
+# 9️⃣ :hover (Pseudo-class)
+
+**Definition:**  
+Applies style when mouse hovers over element.
+
+```css
+button:hover {
+  background-color: black;
+  color: white;
+}
+```
+
+🧠 Memory Trigger:  
+Hover = Interaction
+
+🎯 Used for:
+- Buttons
+- Links
+- Cards
+
+---
+
+# 🔥 30-Second Revision Block
+
+- static → default
+- relative → moves from original
+- absolute → inside positioned parent
+- fixed → sticks to screen
+- sticky → scroll then stick
+- flex-shrink → controls shrinking
+- :hover → adds interactivity
+
+---
+
+# 🚨 Common Mistakes
+
+- Using absolute without positioned parent
+- Forgetting top/left values
+- Confusing fixed & sticky
+- Not setting top for sticky
+
+---
+
+# 🎯 Interview Quick Answers
+
+**Q: Difference between relative & absolute?**  
+Relative moves from original position.  
+Absolute removes element from normal flow.
+
+**Q: When does sticky work?**  
+When scroll threshold is reached + `top` is defined.
+
+**Q: How to make floating button?**  
+Use `position: fixed;`
+
+---
+
+
