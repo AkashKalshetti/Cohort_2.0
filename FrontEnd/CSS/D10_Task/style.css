@@ -1,0 +1,81 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: #1e2a38;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #dcdcdc;
+}
+
+/* ABOUT SECTION */
+.about {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-box {
+    background-color: white;
+    padding: 40px;
+    width: 70%;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.about-box h2 {
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Circle Effect */
+.about-box h2::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 3px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* EDUCATION SECTION */
+.education {
+    background-color: #cfe0ec;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.education h2 {
+    margin-bottom: 30px;
+}
+
+.edu-card {
+    background-color: white;
+    width: 50%;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 6px;
+}
