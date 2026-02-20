@@ -1570,4 +1570,215 @@ Use `position: fixed;`
 
 ---
 
+# CSS – Flexbox Deep Recall + GitHub Hosting
 
+---
+
+# 1️⃣ Flexbox Mental Model
+
+Flexbox works on:
+
+Main Axis → Horizontal (default)  
+Cross Axis → Vertical  
+
+🧠 Memory Trigger:
+Main = justify-content  
+Cross = align-items  
+
+---
+
+# 2️⃣ display: flex
+
+```css
+.container {
+  display: flex;
+}
+```
+
+✔ Turns block elements into flex items  
+✔ Default direction → row  
+
+🎯 Interview Point:
+Flexbox is one-dimensional (row OR column).
+
+---
+
+# 3️⃣ align-items (Cross Axis Control)
+
+Controls vertical alignment (default row layout).
+
+```css
+.container {
+  align-items: center;
+}
+```
+
+Values:
+- flex-start
+- flex-end
+- center
+- stretch (default)
+
+🧠 Quick Trick:
+Align = Vertical
+
+---
+
+# 4️⃣ justify-content (Main Axis Control)
+
+Controls horizontal alignment.
+
+```css
+.container {
+  justify-content: space-between;
+}
+```
+
+Values:
+- flex-start
+- flex-end
+- center
+- space-between
+- space-around
+- space-evenly
+
+🧠 Quick Trick:
+Justify = Horizontal
+
+---
+
+# 5️⃣ gap (Modern Spacing)
+
+```css
+.container {
+  gap: 20px;
+}
+```
+
+✔ Cleaner than margin  
+✔ Works in flex & grid  
+
+🚨 Avoid:
+Using margin on every child unnecessarily.
+
+---
+
+# 6️⃣ Perfect Navbar Layout Example
+
+```css
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+```
+
+This creates:
+✔ Vertical centering  
+✔ Equal horizontal spacing  
+✔ Clean layout  
+
+---
+
+# 7️⃣ Remix Icon (Icon System)
+
+## Step 1: Add CDN
+
+```html
+<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+```
+
+## Step 2: Use Icon
+
+```html
+<i class="ri-github-fill"></i>
+```
+
+🧠 Memory:
+`ri-` = Remix Icon  
+
+✔ Lightweight  
+✔ No image files needed  
+
+---
+
+# 8️⃣ GitHub Pages (Free Hosting)
+
+---
+
+## Hosting Flow (4-Step Recall Model)
+
+1. Create Account
+2. Create Public Repository
+3. Upload Files
+4. Enable Pages
+
+---
+
+## Enable Pages
+
+GitHub → Settings → Pages  
+Select main branch  
+Save  
+
+Live URL format:
+
+```
+https://username.github.io/repository-name/
+```
+
+🎯 Real-World Use:
+- Portfolio sites
+- Resume websites
+- Demo projects
+
+---
+
+# 🔥 30-Second Ultra Recall
+
+Flex = Row by default  
+Align = Vertical  
+Justify = Horizontal  
+Gap = Clean spacing  
+Remix = Icon CDN  
+GitHub Pages = Free hosting  
+
+---
+
+# 🎯 Interview Deep Questions
+
+Q: Why use flex instead of float?  
+A: Flex handles alignment and spacing automatically.
+
+Q: Difference between space-between & space-around?  
+A: Between → no space at edges  
+Around → equal space on both sides
+
+Q: Can gap replace margin?  
+A: Yes, inside flex/grid layouts.
+
+Q: Is GitHub Pages free?  
+A: Yes, for public repositories.
+
+---
+
+# 🚨 Common Mistakes
+
+- Forgetting display: flex
+- Confusing align-items & justify-content
+- Not selecting correct branch in Pages
+- Using private repo for free Pages (limitations apply)
+
+---
+
+# 🧠 Engineer-Level Summary
+
+Flexbox = Layout Control System  
+Icons = CDN-based UI enhancement  
+GitHub Pages = Deployment platform  
+
+Frontend flow:
+Build → Style (Flex) → Add Icons → Deploy
+
+---
